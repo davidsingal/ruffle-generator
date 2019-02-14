@@ -2,6 +2,7 @@
   "name": "rifa-generator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://davidsingal.github.io/ruffle-generator",
   "dependencies": {
     "informed": "^2.0.4",
     "react": "^16.8.1",
