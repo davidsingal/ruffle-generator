@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import RaffleForm from './RaffleForm';
+import RaffleTicket from './RaffleTicket';
+
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    numberOfTickets: 1
+  }
+
+  onRaffleFormChange = (values) => {
+    console.log(values);
+    // this.setState({
+    //   numberOfTickets
+    // });
+  }
+
   render() {
+    const { numberOfTickets } = this.state;
+    const tickets = new Array(numberOfTickets).fill(0);
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div>
+          <RaffleForm onChange={this.onRaffleFormChange} />
+        </div>
+        <div>
+          {tickets.map((t, i) => <RaffleTicket number={i} />)}
+        </div>
       </div>
     );
   }

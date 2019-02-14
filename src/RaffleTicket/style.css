@@ -1,0 +1,10 @@
+.raffle-ticket {
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.raffle-ticket .form-control.-user-fill {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
