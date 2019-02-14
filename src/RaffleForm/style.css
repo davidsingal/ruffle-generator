@@ -1,0 +1,16 @@
+.raffle-form {
+}
+
+.raffle-form .-actions {
+  margin: 1rem 0;
+}
+
+.raffle-form .-actions button {
+  margin-right: 15px;
+}
+
+@media print {
+  .raffle-form {
+    display: none;
+  }
+}

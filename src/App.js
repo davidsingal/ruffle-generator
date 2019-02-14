@@ -7,14 +7,15 @@ import './App.css';
 class App extends Component {
 
   state = {
+    title: 'Viaje de fin de curso',
+    description: '',
+    price: 1,
     numberOfTickets: 1
   }
 
-  onRaffleFormChange = (values) => {
-    console.log(values);
-    // this.setState({
-    //   numberOfTickets
-    // });
+  onRaffleFormChange = (values = {}) => {
+    const { title, description, numberOfTickets, price } = values;
+    this.setState({ title, description, numberOfTickets, price });
   }
 
   render() {
@@ -22,12 +23,27 @@ class App extends Component {
     const tickets = new Array(numberOfTickets).fill(0);
 
     return (
-      <div className="App">
-        <div>
-          <RaffleForm onChange={this.onRaffleFormChange} />
+      <div className="app">
+        <div className="form-region">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h1>Generador de rifas</h1>
+                <RaffleForm defaultValues={this.state} onChange={this.onRaffleFormChange} />
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          {tickets.map((t, i) => <RaffleTicket number={i} />)}
+        <div className="result-region">
+          <div className="container-fluid">
+            <div className="row">
+              {tickets.map((t, i) => (
+                <div className="col-6" key={`ticket${i}`}>
+                  <RaffleTicket {...this.state} number={i} />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );

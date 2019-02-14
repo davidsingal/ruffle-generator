@@ -1,43 +1,68 @@
 import React, { PureComponent } from 'react';
-import { Form, Text } from 'informed';
+import { Form, Text, TextArea } from 'informed';
+
+import './style.css';
 
 class RaffleForm extends PureComponent {
   static defaultProps = {
+    defaultValues: {},
     onChange: () => null
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
+  handleSubmit = (values) => {
+    const { onChange } = this.props;
+    onChange(values);
   }
 
   render() {
-    const { onChange } = this.props;
+    const { defaultValues } = this.props;
 
     return (
-      <Form>
-        <div>
-          <label>
-            Title
+      <Form
+        className="raffle-form"
+        initialValues={defaultValues}
+        onSubmit={this.handleSubmit}
+      >
+        <div className="form-group">
+          <label htmlFor="title">
+            Título
           </label>
-          <Text type="text" field="title" placeholder="End of course trip" />
+          <Text
+            type="text"
+            id="title"
+            field="title"
+            className="form-control"
+          />
         </div>
-        <div>
-          <label>
-            Description
+        <div className="form-group">
+          <label htmlFor="description">
+            Descripción
           </label>
-          <textarea placeholder="Lorem ipsum" />
+          <TextArea field="description" id="description" className="form-control" />
         </div>
-        <div>
-          <label>
-            Price
+        <div className="form-group">
+          <label htmlFor="price">
+            Precio de participación (€)
           </label>
-          <Text type="number" placeholder="1" field="price" />
+          <Text type="number" field="price" id="price" className="form-control" />
         </div>
-        <div>
+        <div className="form-group">
           <label htmlFor="numberOfTickets">
-            Number of tickets
+            Número de boletos
           </label>
-          <Text type="number" min="1" field="numberOfTickets" id="numberOfTickets" placeholder="1" />
+          <Text
+            type="number"
+            field="numberOfTickets"
+            id="numberOfTickets"
+            className="form-control"
+          />
+        </div>
+        <div className="-actions">
+          <button type="submit" className="btn btn-primary">Generar</button>
+          <button type="button" className="btn btn-secondary" onClick={() => window.print()}>Imprimir</button>
+        </div>
+        <div>
+          <p className="small">This tool has been made with love for Andrés Inga.</p>
         </div>
       </Form>
     );
