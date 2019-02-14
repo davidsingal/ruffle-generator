@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.be2a11a2.chunk.css",
-  "main.js": "/static/js/main.d7baccaf.chunk.js",
-  "main.js.map": "/static/js/main.d7baccaf.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
-  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
-  "static/js/2.42e85152.chunk.js": "/static/js/2.42e85152.chunk.js",
-  "static/js/2.42e85152.chunk.js.map": "/static/js/2.42e85152.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.1117b428f99ecf1c15fb9e975739706b.js": "/precache-manifest.1117b428f99ecf1c15fb9e975739706b.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.be2a11a2.chunk.css.map": "/static/css/main.be2a11a2.chunk.css.map"
+  "main.css": "/ruffle-generator/static/css/main.be2a11a2.chunk.css",
+  "main.js": "/ruffle-generator/static/js/main.e9684d45.chunk.js",
+  "main.js.map": "/ruffle-generator/static/js/main.e9684d45.chunk.js.map",
+  "runtime~main.js": "/ruffle-generator/static/js/runtime~main.95408cc0.js",
+  "runtime~main.js.map": "/ruffle-generator/static/js/runtime~main.95408cc0.js.map",
+  "static/js/2.d542bc8f.chunk.js": "/ruffle-generator/static/js/2.d542bc8f.chunk.js",
+  "static/js/2.d542bc8f.chunk.js.map": "/ruffle-generator/static/js/2.d542bc8f.chunk.js.map",
+  "index.html": "/ruffle-generator/index.html",
+  "precache-manifest.2414c44d1ac6252a0f0db7e72577e0fc.js": "/ruffle-generator/precache-manifest.2414c44d1ac6252a0f0db7e72577e0fc.js",
+  "service-worker.js": "/ruffle-generator/service-worker.js",
+  "static/css/main.be2a11a2.chunk.css.map": "/ruffle-generator/static/css/main.be2a11a2.chunk.css.map"
 }
