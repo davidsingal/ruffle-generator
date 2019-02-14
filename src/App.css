@@ -3,3 +3,9 @@
   border-bottom: 1px solid #ddd;
   padding: 30px 0;
 }
+
+@media print {
+  .form-region {
+    display: none;
+  }
+}

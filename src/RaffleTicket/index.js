@@ -46,7 +46,7 @@ class RaffleTicket extends PureComponent {
             <div className="content">
               <h1>Sorteo</h1>
               <h2>{title}</h2>
-              <p>{description}</p>
+              <p className="description">{description}</p>
             </div>
             <footer className="row">
               <div className="col">

@@ -25,6 +25,10 @@
   font-size: 12px;
 }
 
+.raffle-ticket .content > h2 {
+  font-size: 24px;
+}
+
 .raffle-ticket .price {
   font-weight: bold;
   font-size: 1.2rem;
@@ -34,6 +38,10 @@
   font-face: monospace;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.raffle-ticket .description {
+  font-size: 14px;
 }
 
 @media print {
