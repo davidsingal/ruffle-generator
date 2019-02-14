@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/ruffle-generator/static/js/runtime~main.95408cc0.js"
   },
   {
-    "revision": "9721154b1991dd009d0c",
-    "url": "/ruffle-generator/static/js/main.9721154b.chunk.js"
+    "revision": "cf2cec89ccaf9c685507",
+    "url": "/ruffle-generator/static/js/main.cf2cec89.chunk.js"
   },
   {
     "revision": "d542bc8ffce10f456271",
     "url": "/ruffle-generator/static/js/2.d542bc8f.chunk.js"
   },
   {
-    "revision": "9721154b1991dd009d0c",
-    "url": "/ruffle-generator/static/css/main.9272049a.chunk.css"
+    "revision": "cf2cec89ccaf9c685507",
+    "url": "/ruffle-generator/static/css/main.7d45413c.chunk.css"
   },
   {
-    "revision": "e539fe1913aaaefbed704b828d656d10",
+    "revision": "4cd2a89a2fa572f3debf17945000ad98",
     "url": "/ruffle-generator/index.html"
   }
 ];
